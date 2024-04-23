@@ -35,9 +35,10 @@ These components are interconnected through well-defined interfaces, allowing fo
 
 ## Operation
 The operation of the system involves several software commands:
-- **Crawling**: `python crawl.py --max-depth=10 --max-pages=100`
-- **Starting the Server**: `python app.py`
-- **Querying**: Accessing `http://127.0.0.1:5000/search?query=<query_text>`
+- **Crawling**: `python main.py --mode crawl --max-depth 5 --max-pages 50`
+- **Starting the Server**: `python main.py --mode serve`
+- **Querying**: Accessing `python main.py --mode search --query "love" --limit 2`
+
 
 The inputs include command-line arguments for the crawler and query parameters for the search API. Installation requires Python 3.10+, along with dependencies listed in a `requirements.txt` file, ensuring all necessary libraries are installed.
 
