@@ -35,6 +35,8 @@ These components are interconnected through well-defined interfaces, allowing fo
 
 ## Operation
 The operation of the system involves several software commands:
+- **Activating Virtual Environment**: Before getting started make sure to activate the virtual env so you dont have to worry about downloading any packages. `source env/bin/activate` (or) if windows `env/Scripts/activate`
+- **Installation**: if required, install the required libraries, `pip install requirements.txt`
 - **Crawling**: `python main.py --mode crawl --max-depth 5 --max-pages 50`
 - **Starting the Server**: `python main.py --mode serve`
 - **Querying**: Accessing `python main.py --mode search --query "love" --limit 2`
